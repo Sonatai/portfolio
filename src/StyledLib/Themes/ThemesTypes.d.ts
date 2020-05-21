@@ -2,8 +2,13 @@ import 'styled-components';
 
 declare module 'styled-components' {
 	export interface DefaultTheme {
-		background: {
-			main: string;
+		colors: {
+			background: {
+				main: string;
+			};
+			fonts: {
+				main: string;
+			};
 		};
 	}
 }

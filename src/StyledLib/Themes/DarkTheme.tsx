@@ -2,8 +2,13 @@ import { DefaultTheme } from 'styled-components';
 import ColorPalette from './ColorPalette';
 
 const DarkTheme: DefaultTheme = {
-	background: {
-		main: ColorPalette.black,
+	colors: {
+		background: {
+			main: ColorPalette.black,
+		},
+		fonts: {
+			main: ColorPalette.grey.light,
+		},
 	},
 };
 
