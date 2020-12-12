@@ -1,27 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { DarkTheme } from '../StyledLib/Themes/DarkTheme';
-import { LightTheme } from '../StyledLib/Themes/LightTheme';
+import React from 'react';
 
-const Header: React.FC<{ setTheme: any }> = (props) => {
-	const [Checked, setChecked] = useState(false);
-	useEffect(() => {
-		const setTheme = (): void => {
-			Checked ? props.setTheme(DarkTheme) : props.setTheme(LightTheme);
-		};
-		return setTheme();
-	}, [Checked]);
-
+const Header: React.FC = () => {
 	return (
 		<h3>
-			Home | Game Projects | Software Projects | Jams | Resume | Contact Me |{' '}
-			<label htmlFor='theme'>Dark Theme</label>{' '}
-			<input
-				type='checkbox'
-				id='theme'
-				checked={Checked}
-				onClick={() => setChecked(!Checked)}
-				onChange={() => {}}
-			/>
+			Home | Game Projects | Student Projects | Business Projects | Resume |
+			Contact Me
 		</h3>
 	);
 };

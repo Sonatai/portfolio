@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
-  
+  font-size:'16px';
 }
 
 *,
@@ -33,10 +33,6 @@ a {
 }
 
 ul {
-    
-}
-
-strong {
     
 }
 `;

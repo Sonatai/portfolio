@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
 
 import Footer from './Component/Footer';
 import Header from './Component/Header';
-import HomePage from './Pages/Home';
+import { HomePage } from './Pages/HomePage';
 import { DarkTheme } from './StyledLib/Themes/DarkTheme';
 import GlobalStyle from './StyledLib/Themes/GlobalStyle';
-import { ThemeProvider } from 'styled-components';
-import { LightTheme } from './StyledLib/Themes/LightTheme';
 
 const App: React.FC = () => {
-	const [theme, setTheme] = useState(LightTheme);
+	const [Theme, setTheme] = useState(DarkTheme);
 	return (
 		<>
-			<ThemeProvider theme={theme}>
+			<ThemeProvider theme={Theme}>
 				<GlobalStyle />
-				<Header setTheme={setTheme} />
+				<Header />
 				<HomePage />
 				<Footer />
 			</ThemeProvider>

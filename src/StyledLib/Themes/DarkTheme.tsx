@@ -4,7 +4,7 @@ import ColorPalette from './ColorPalette';
 const DarkTheme: DefaultTheme = {
 	colors: {
 		background: {
-			main: ColorPalette.black,
+			main: ColorPalette.grey.dark,
 		},
 		fonts: {
 			main: ColorPalette.grey.light,
